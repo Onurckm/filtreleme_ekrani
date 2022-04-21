@@ -1,0 +1,17 @@
+ if (comboBox1.SelectedIndex == 0)
+            {
+                string cumle = "select * from personel_tbl where tc_no like '%" + textBox7.Text + "%'";
+                OleDbDataAdapter adtr2 = new OleDbDataAdapter();
+                dataGridView1.DataSource = listele(adtr2, cumle);
+            }
+            else if (comboBox1.SelectedIndex == 1)
+            {
+                string cumle = "select * from personel_tbl where ad like '%" + textBox7.Text + "%'";
+                OleDbDataAdapter adtr2 = new OleDbDataAdapter();
+                dataGridView1.DataSource = listele(adtr2, cumle);
+            }
+            else if (comboBox1.SelectedIndex == 2)
+            {
+                string cumle = "select * from personel_tbl where soyad like '%" + textBox7.Text + "%'";
+                OleDbDataAdapter adtr2 = new OleDbDataAdapter();
+                dataGridView1.DataSource = listele(adtr2, cumle);
